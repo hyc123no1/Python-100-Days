@@ -20,11 +20,11 @@ class DownloadTask(threading.Thread):
 		self._filename = filename
 
 	def run(self):
-		print('开始下载%s...' % self._filename)
+		print('开始下载{}...'.format(self._filename))
 		time_to_download = randint(5, 10)
-		print('剩余时间%d秒.' % time_to_download)
+		print('剩余时间{}秒.'.format(time_to_download))
 		sleep(time_to_download)
-		print('%s下载完成!' % self._filename)
+		print('{}下载完成!'.format(self._filename))
 
 
 def main():
@@ -38,7 +38,7 @@ def main():
 	thread1.join()
 	thread2.join()
 	end = time()
-	print('总共耗费了%.3f秒' % (end - start))
+	print('总共耗费了{:.3f}秒'.format(end - start))
 
 
 if __name__ == '__main__':

@@ -16,9 +16,9 @@ def build_deliver_man(man_id):
 	total = 0
 	while True:
 		total += 1
-		print('%d号快递员准备接今天的第%d单.' % (man_id, total))
+		print('{}号快递员准备接今天的第{}单.'.format(man_id, total))
 		pkg = yield
-		print('%d号快递员收到编号为%s的包裹.' % (man_id, pkg))
+		print('{}号快递员收到编号为{}的包裹.'.format(man_id, pkg))
 		sleep(0.5)
 
 

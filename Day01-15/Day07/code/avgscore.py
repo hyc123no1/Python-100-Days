@@ -18,9 +18,11 @@ def main():
 		scores[index] = float(input('请输入第%d个学生的成绩: ' % (index + 1)))
 	total = 0
 	for index in range(len(names)):
-		print('%s: %.1f分' % (names[index], scores[index]))
+#		print('%s: %.1f分' % (names[index], scores[index]))
+		print('{}:{}分'.format(names[index],scores[index]))
 		total += scores[index]
-	print('平均成绩是: %.1f分' % (total / number))
+#	print('平均成绩是: %.1f分' % (total / number))
+	print('平均成绩是:{}分'.format(total/number))
 
 
 if __name__ == '__main__':

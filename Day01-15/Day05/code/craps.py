@@ -25,7 +25,7 @@ while money > 0:
 		if debt > 0 and debt <= money:
 			break
 	first = randint(1, 6) + randint(1, 6)
-	print('玩家摇出了%d点' % first)
+	print('玩家摇出了{}点'.format(first))
 	if first == 7 or first == 11:
 		print('玩家胜!')
 		money += debt
@@ -36,8 +36,8 @@ while money > 0:
 		needs_go_on = True
 
 	while needs_go_on:
-		current = randint(1, 6) + randint(1, 6)
-		print('玩家摇出了%d点' % current)
+		current = randint(1, 6) + randint(1, 6)  #why？
+		print('玩家摇出了{}点'.format(current))
 		if current == 7:
 			print('庄家胜')
 			money -= debt

@@ -41,6 +41,6 @@ if __name__ == '__main__':
 		threading.Thread(target=account.deposit, args=(1,)).start()
 	# 等所有存款的线程都执行完毕
 	time.sleep(2)
-	print('账户余额为: ￥%d元' % account.balance)
+	print('账户余额为: ￥{}元'.format(account.balance))
 
 # 想一想结果为什么不是我们期望的100元

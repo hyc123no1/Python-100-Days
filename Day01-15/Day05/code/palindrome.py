@@ -17,6 +17,6 @@ while temp > 0:
 	num2 += temp % 10
 	temp //= 10
 if num == num2:
-	print('%d是回文数' % num)
+	print('{}是回文数'.format(num))
 else:
-	print('%d不是回文数' % num)
+	print('{}不是回文数'.format(num))

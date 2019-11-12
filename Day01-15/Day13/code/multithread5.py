@@ -56,7 +56,7 @@ def main():
     # 等所有存款的线程都执行完毕∫
     for t in threads:
         t.join()
-    print('账户余额为: ￥%d元' % account.balance)
+    print('账户余额为: ￥{}元'.format(account.balance))
 
 
 if __name__ == '__main__':

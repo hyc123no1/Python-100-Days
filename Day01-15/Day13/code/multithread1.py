@@ -15,16 +15,16 @@ import _thread
 
 
 def download_task(filename):
-	print('开始下载%s...' % filename)
+	print('开始下载{}...'.format(filename))
 	time_to_download = randint(5, 10)
-	print('剩余时间%d秒.' % time_to_download)
+	print('剩余时间{}秒.'.format(time_to_download))
 	sleep(time_to_download)
-	print('%s下载完成!' % filename)
+	print('{}下载完成!'.format(filename))
 
 
 def shutdown_hook(start):
 	end = time()
-	print('总共耗费了%.3f秒.' % (end - start))
+	print('总共耗费了{:.3f}秒.'.format(end - start))
 
 
 def main():

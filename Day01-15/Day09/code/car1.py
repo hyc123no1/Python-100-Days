@@ -42,7 +42,9 @@ class Car(object):
 		self._max_speed = max_speed
 
 	def __str__(self):
-		return 'Car: [品牌=%s, 最高时速=%d]' % (self._brand, self._max_speed)
+		return 'Car:[品牌={}, 最高时速={}]'.format(self._brand, self._max_speed)
+#		return 'Car: [品牌=%s, 最高时速=%d]' % (self._brand, self._max_speed)
+        
 
 
 car = Car('QQ', 120)

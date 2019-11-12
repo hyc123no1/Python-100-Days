@@ -40,9 +40,9 @@ print(f2())
 # 关键字参数
 def f3(**kw):
 	if 'name' in kw:
-		print('欢迎你%s!' % kw['name'])
+		print('欢迎你{}!'.format(kw['name']))
 	elif 'tel' in kw:
-		print('你的联系电话是: %s!' % kw['tel'])
+		print('你的联系电话是: {}!'.format(kw['tel']))
 	else:
 		print('没找到你的个人信息!')
 

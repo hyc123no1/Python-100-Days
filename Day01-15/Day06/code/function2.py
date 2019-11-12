@@ -22,5 +22,5 @@ def lcm(x, y):
 	return x * y // gcd(x, y)
 
 
-print(gcd(15, 27))
+print(gcd(153, 270))
 print(lcm(15, 27))
